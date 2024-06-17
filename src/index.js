@@ -18,8 +18,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let icon = response.data.condition.icon_url;
   iconElement.innerHTML = `<img src="${icon}" alt="image">`;
-  search_(response.data.city)
-
+  search_(response.data.city);
 }
 
 function search(city) {
@@ -66,7 +65,7 @@ function displayForecast(response) {
     }
   });
   forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = forecast
+  forecastElement.innerHTML = forecast;
 }
 
 function formatDate(date) {
